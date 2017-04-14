@@ -1,7 +1,7 @@
 # get-my-weather
 A KoaJS application which uses external APIs to fetch weather data relative to the request's public IP address.
 
-<h3>How it works</h3>
+<h2>How it works</h2>
 
 <ul>
   <li>The IP of the request is grabbed: 
@@ -21,7 +21,21 @@ A KoaJS application which uses external APIs to fetch weather data relative to t
     <p><code>weatherData = JSON.parse(weatherApiRes.body);</code></p>
     <p><code>this.weather = { temp: weatherData.main.temp + ' °F', humidity: weatherData.main.humidity + '%' };</code></p>
   </li>
-  
 </ul>
 
+<h2>Installation</h2>
 
+<h3>Prerequisites</h3>
+<ul>
+	<li>NodeJS & NPM</li>
+	<p><i>Koa requires node v7.6.0 or higher for ES2015 and async function support.</i></p>
+</ul>
+
+<h3>Instructions</h3>
+<ul>
+	<li>Download the repo: <code>git clone https://github.com/callum-messiter/get-my-weather.git</code></li>
+	<li><code>cd get-my-weather</code></li>
+	<li>Install dependencies: <code>npm install</code></li>
+	<li>Run it locally: <code>npm start</code></li>
+	<li>Visit <a href="http://localhost:8080/">http://localhost:8080/</a> in the browser</li>
+</ul>
